@@ -3,3 +3,6 @@ Source/**/obj/
 Source/**/bin/
 *.user
 .vs/
+
+# RimWorld asset pack (Steam yuklemesinde otomatik olusur)
+*/Assets.zip*
