@@ -4,7 +4,7 @@
     <packageId>dsu.rewrite.digitalstorageunit</packageId>
     <author>berkebzc</author>
     <modVersion IgnoreIfNoMatchingField="True">2.0.0</modVersion>
-    <url></url>
+    <url>https://github.com/berkebzc/Digital-Storage-Unit-Rewrite</url>
     <description>A ground-up, performance focused rewrite of Digital Storage Unit for RimWorld 1.7.
 
 Adds a special storage that holds a large number of item stacks, plus Input Buses, Output Buses, Access Points and Data Extenders "connected" to it. The DSU consumes power per stored stack. Without power, items can still be taken out, but nothing new can be stored.
