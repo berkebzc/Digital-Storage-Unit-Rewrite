@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!--============================== Access Point ==============================-->
+    <ThingDef ParentName="DSU_PortBase">
+        <defName>DSU_AccessPoint_Building</defName>
+        <label>DSU Access Point</label>
+        <description>An interactive connection bus for the Digital Storage Unit. When a pawn needs an item from the connected DSU and this access point is on a shorter route, the item is delivered here. Items hauled onto it are stored into the DSU.</description>
+        <thingClass>DigitalStorageUnit.AccessPointPortBuilding</thingClass>
+        <building>
+            <isHopper>true</isHopper>
+        </building>
+        <costList>
+            <ComponentSpacer>1</ComponentSpacer>
+            <DSU_MachineFrame_III>1</DSU_MachineFrame_III>
+            <DSU_ElectronicChip_II>1</DSU_ElectronicChip_II>
+        </costList>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>300</basePowerConsumption>
+            </li>
+            <li Class="CompProperties_Flickable" />
+            <li Class="CompProperties_Glower">
+                <glowRadius>2</glowRadius>
+                <glowColor>(115,198,206,0)</glowColor>
+            </li>
+            <li>
+                <compClass>DigitalStorageUnit.RenderLinksComp</compClass>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!--============================== Input Bus ==============================-->
+    <ThingDef ParentName="DSU_PortBase">
+        <defName>DSU_InputBus_Building</defName>
+        <label>DSU Input Bus</label>
+        <description>An input bus for the Digital Storage Unit. Items placed on it (or lying on its work cell) are transferred into the connected DSU. Shares the storage settings of the DSU.</description>
+        <thingClass>DigitalStorageUnit.InputPortDsuBuilding</thingClass>
+        <building>
+            <isHopper>true</isHopper>
+        </building>
+        <costList>
+            <ComponentSpacer>1</ComponentSpacer>
+            <DSU_MachineFrame_III>1</DSU_MachineFrame_III>
+            <DSU_ElectronicChip_I>1</DSU_ElectronicChip_I>
+        </costList>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>300</basePowerConsumption>
+            </li>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Glower">
+                <glowRadius>2</glowRadius>
+                <glowColor>(115,198,206,0)</glowColor>
+            </li>
+            <li>
+                <compClass>DigitalStorageUnit.RenderLinksComp</compClass>
+            </li>
+            <li>
+                <compClass>DigitalStorageUnit.PortPositionComp</compClass>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!--============================== Output Bus ==============================-->
+    <ThingDef ParentName="DSU_PortBase">
+        <defName>DSU_OutputBus_Building</defName>
+        <label>DSU Output Bus</label>
+        <description>An output bus for the Digital Storage Unit. It pushes the items allowed by its own storage settings out of the DSU onto its work cell (its own cell or an adjacent one, e.g. a hopper). Supports minimum / maximum amounts.</description>
+        <thingClass>DigitalStorageUnit.OutputPortDsuBuilding</thingClass>
+        <costList>
+            <ComponentSpacer>1</ComponentSpacer>
+            <DSU_MachineFrame_III>1</DSU_MachineFrame_III>
+            <DSU_ElectronicChip_I>1</DSU_ElectronicChip_I>
+        </costList>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>300</basePowerConsumption>
+            </li>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Glower">
+                <glowRadius>2</glowRadius>
+                <glowColor>(115,198,206,0)</glowColor>
+            </li>
+            <li>
+                <compClass>DigitalStorageUnit.RenderLinksComp</compClass>
+            </li>
+            <li>
+                <compClass>DigitalStorageUnit.PortPositionComp</compClass>
+            </li>
+        </comps>
+    </ThingDef>
+</Defs>

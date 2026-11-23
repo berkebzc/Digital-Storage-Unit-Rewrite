@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<loadFolders>
+  <v1.7>
+    <li>1.7</li>
+    <li IfModActive="skyarkhangel.HSK">1.7/Compat/Core_SK</li>
+    <li IfModActive="LWM.DeepStorage">1.7/Compat/LWM_DeepStorage</li>
+  </v1.7>
+</loadFolders>

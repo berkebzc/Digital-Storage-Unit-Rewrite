@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+    <DSU>Dijital Depolama Ünitesi</DSU>
+    <DSU.AdjustOutputDirection>Çalışma hücresi</DSU.AdjustOutputDirection>
+    <DSU.AdjustOutputDirection.Desc>Bu veri yolunun çalıştığı hücreyi seç: kendi hücresi veya dört komşu hücreden biri (örn. bir hazne ya da konveyör).</DSU.AdjustOutputDirection.Desc>
+    <DSU.DropDirection>Bırakma yönü</DSU.DropDirection>
+    <DSU.DropDirection.Desc>Eşyalar sekmesinden bırakılan eşyaların DSU'nun hangi tarafına konacağı.</DSU.DropDirection.Desc>
+    <DSU.Direction.Self>kendisi</DSU.Direction.Self>
+    <DSU.Direction.North>kuzey</DSU.Direction.North>
+    <DSU.Direction.East>doğu</DSU.Direction.East>
+    <DSU.Direction.South>güney</DSU.Direction.South>
+    <DSU.Direction.West>batı</DSU.Direction.West>
+    <DSU.MinMaxAmounts>En az/en çok miktarları ayarla</DSU.MinMaxAmounts>
+    <DSU.UseMin>En az kullanılsın mı?</DSU.UseMin>
+    <DSU.UseMax>En çok kullanılsın mı?</DSU.UseMax>
+    <DSU.Max>En çok</DSU.Max>
+    <DSU.Max.Desc>Etkinse, Çıkış Yolu yığın dolduğunda veya yığın X'e ulaştığında eşya almayı bırakır.</DSU.Max.Desc>
+    <DSU.Min>En az</DSU.Min>
+    <DSU.Min.Desc>Etkinse, Çıkış Yolu X'ten küçük yığınları DSU'ya geri gönderir ve yalnızca depoda en az bu kadar eşya varsa çıkış yapar.</DSU.Min.Desc>
+    <DSU.Limit.GetInspectString>Sınırlar: {0} - {1}</DSU.Limit.GetInspectString>
+    <DSU.ForbidOnPlacing>Çıkışı yasakla</DSU.ForbidOnPlacing>
+    <DSU.ForbidOnPlacing.Desc>Bu yolun dışarı verdiği eşyalar yasaklı olur.</DSU.ForbidOnPlacing.Desc>
+    <DSU.Drop>Bırak: {0}</DSU.Drop>
+    <DSU.TotalStackNum>Toplam yığın sayısı: {0}</DSU.TotalStackNum>
+    <DSU.IItemsTab>Eşyalar</DSU.IItemsTab>
+    <DSU.IItemsTab.Label.Empty>Şu anda depolanan eşya yok</DSU.IItemsTab.Label.Empty>
+    <DSU.IItemsTab.Caption>{0}: {1}/{2} yığın</DSU.IItemsTab.Caption>
+    <DSU.IItemsTab.Caption.Filtered>{0}: {1}/{2} yığın (bulunan: {3})</DSU.IItemsTab.Caption.Filtered>
+    <DSU.Rename>Yeniden adlandır</DSU.Rename>
+    <DSU.Rename.Desc>Bu yapıyı yeniden adlandır</DSU.Rename.Desc>
+    <DSU.StacksCount.Detailed>{0}/{1} yığın</DSU.StacksCount.Detailed>
+    <DSU.Output.Settings>Çıkış ayarları...</DSU.Output.Settings>
+    <DSU.BindPort.Desc>Bu portun bağlı olduğu Dijital Depolama Ünitesini seç. Seçili tüm portlara uygulanır.</DSU.BindPort.Desc>
+    <DSU.AccessPoint.Providing>Sağlanan eşyalar: {0}</DSU.AccessPoint.Providing>
+    <DSU.PawnAccess>Karakter erişimi</DSU.PawnAccess>
+    <DSU.PawnAccess.Desc>Kapalıyken karakterler bu DSU'dan eşya alamaz ve içine eşya taşıyamaz. Portlar çalışmaya devam eder.</DSU.PawnAccess.Desc>
+    <DSU.Heater.Inspect>Oda sıcaklığı: {0} (hasar: {1})</DSU.Heater.Inspect>
+    <DSU.Alert.LostLink.Label>DSU: port bağlantısı yok</DSU.Alert.LostLink.Label>
+    <DSU.Alert.LostLink.Desc>Bir DSU portu hiçbir Dijital Depolama Ünitesine bağlı değil. Portu seçip bir DSU'ya bağla.</DSU.Alert.LostLink.Desc>
+    <DSU.Alert.DsuNonHermetic>DSU odasının çatısı yok</DSU.Alert.DsuNonHermetic>
+    <DSU.Alert.DsuNonHermetic.Desc>DSU tamamen çatılı bir odada olmalı, ancak odada tavan veya duvar eksik.</DSU.Alert.DsuNonHermetic.Desc>
+    <DSU.Alert.DsuOverheat>DSU oda sıcaklığı kritik</DSU.Alert.DsuOverheat>
+    <DSU.Alert.DsuOverheat.Desc>Sıcaklık artmaya devam ederse DSU ve içindeki eşyalar hasar almaya başlar. DSU'yu kapat veya soğutucu kullan!</DSU.Alert.DsuOverheat.Desc>
+
+    <DSU.PlaceWorker.ProperRoomNeeded>DSU tamamen çatılı bir odaya yerleştirilmeli</DSU.PlaceWorker.ProperRoomNeeded>
+    <DSU.PlaceWorker.DsuNeeded>Dijital Depolama Ünitesi olan bir odaya yerleştirilmeli</DSU.PlaceWorker.DsuNeeded>
+    <DSU.PlaceWorker.OnlyOneDsuNeeded>Yalnızca bir Dijital Depolama Ünitesi olan bir odaya yerleştirilmeli</DSU.PlaceWorker.OnlyOneDsuNeeded>
+    <DSU.Message.AutoBoundTo>DSU'ya otomatik bağlandı: {0}</DSU.Message.AutoBoundTo>
+
+    <DSU.Config.BaseDsuStackSize>DSU temel kapasitesi: {0} yığın</DSU.Config.BaseDsuStackSize>
+    <DSU.Config.BaseDsuStackSize.Desc>Bir DSU'nun veri genişletici olmadan tutabileceği yığın sayısı.</DSU.Config.BaseDsuStackSize.Desc>
+    <DSU.Config.ExtenderStackIncrease>Veri genişletici kapasitesi: +{0} yığın</DSU.Config.ExtenderStackIncrease>
+    <DSU.Config.ExtenderStackIncrease.Desc>DSU odasındaki her elektrikli veri genişleticinin eklediği yığın sayısı.</DSU.Config.ExtenderStackIncrease.Desc>
+    <DSU.Config.DsuPathingMultiplier>Erişim noktası tercih çarpanı: {0}</DSU.Config.DsuPathingMultiplier>
+    <DSU.Config.DsuPathingMultiplier.Desc>Karakter -> DSU -> hedef mesafesini çarpar. Yüksek değerler karakterlerin Erişim Noktalarını daha sık kullanmasını sağlar.</DSU.Config.DsuPathingMultiplier.Desc>
+    <DSU.Config.EnergyPerStack>Depolanan yığın başına DSU enerji tüketimi: {0} W</DSU.Config.EnergyPerStack>
+    <DSU.Config.EnergyPerStack.Desc>Değişiklikler 60 tick içinde uygulanır</DSU.Config.EnergyPerStack.Desc>
+    <DSU.Config.AccessPointReturnDelay>Erişim noktası geri gönderme gecikmesi: {0} tick</DSU.Config.AccessPointReturnDelay>
+    <DSU.Config.AccessPointReturnDelay.Desc>Erişim Noktasına getirilen bir eşyanın (rezerve değilse) DSU'ya geri gönderilmeden önce ne kadar bekleyeceği.</DSU.Config.AccessPointReturnDelay.Desc>
+    <DSU.Config.HeaterEnabled>Zor mod: DSU ısınma mekaniği</DSU.Config.HeaterEnabled>
+    <DSU.Config.HeaterEnabled.Desc>DSU çalışırken çok ısı yayar ve bu ısıyı uzaklaştırman gerekir. DSU aşırı ısınırsa kendisi ve içindeki eşyalar hasar alır. Klima veya dondurucu stokla!</DSU.Config.HeaterEnabled.Desc>
+    <DSU.Config.AutoBoundDsu>Portları tek DSU'ya otomatik bağla</DSU.Config.AutoBoundDsu>
+    <DSU.Config.AutoBoundDsu.Desc>Haritada yalnızca bir DSU varsa yeni portlar otomatik olarak ona bağlanır.</DSU.Config.AutoBoundDsu.Desc>
+    <DSU.Config.CleanCellItemList>DSU üzerindeyken hücre eşya listesini gizle</DSU.Config.CleanCellItemList>
+    <DSU.Config.CleanCellItemList.Desc>İmleç dolu bir DSU'nun üzerindeyken sol alttaki fare bilgisini gizler. Yüzlerce yığını her karede listelemek FPS'i çok düşürür.</DSU.Config.CleanCellItemList.Desc>
+</LanguageData>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingDef Name="DSU_BuildingBase" Abstract="True">
+        <category>Building</category>
+        <altitudeLayer>Building</altitudeLayer>
+        <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+        <canOverlapZones>false</canOverlapZones>
+        <constructEffect>ConstructMetal</constructEffect>
+        <selectable>true</selectable>
+        <!-- static graphics only: cheaper than RealtimeOnly -->
+        <drawerType>MapMeshOnly</drawerType>
+        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+        <repairEffect>Repair</repairEffect>
+        <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+        <filthLeaving>Filth_RubbleBuilding</filthLeaving>
+        <statBases>
+            <SellPriceFactor>0.70</SellPriceFactor>
+            <Beauty>0</Beauty>
+            <Mass>10</Mass>
+            <Flammability>0.9</Flammability>
+        </statBases>
+        <thingCategories>
+            <li>BuildingsFurniture</li>
+        </thingCategories>
+        <designationCategory>Furniture</designationCategory>
+        <designatorDropdown>DSU_StorageGroup</designatorDropdown>
+        <uiIconScale>0.7</uiIconScale>
+        <tradeTags>
+            <li>Furniture</li>
+        </tradeTags>
+        <passability>PassThroughOnly</passability>
+        <pathCost>70</pathCost>
+        <fillPercent>0.5</fillPercent>
+        <castEdgeShadows>true</castEdgeShadows>
+        <rotatable>false</rotatable>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <staticSunShadowHeight>0.3</staticSunShadowHeight>
+        <surfaceType>Item</surfaceType>
+        <tickerType>Normal</tickerType>
+        <researchPrerequisites>
+            <li>DSU_Research</li>
+        </researchPrerequisites>
+        <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <building>
+            <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+            <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+            <fixedStorageSettings>
+                <priority>Normal</priority>
+                <filter>
+                    <categories>
+                        <li>Root</li>
+                    </categories>
+                    <disallowedCategories>
+                        <li>Animals</li>
+                        <li>Plants</li>
+                    </disallowedCategories>
+                </filter>
+            </fixedStorageSettings>
+        </building>
+    </ThingDef>
+
+    <!-- shared by Input Bus / Output Bus / Access Point -->
+    <ThingDef Name="DSU_PortBase" ParentName="DSU_BuildingBase" Abstract="True">
+        <graphicData>
+            <texPath>Storage/IO_Port</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <damageData>
+                <rect>(0.05,0.1,0.9,0.9)</rect>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+            </damageData>
+        </graphicData>
+        <drawGUIOverlay>true</drawGUIOverlay>
+        <building>
+            <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+            <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+            <fixedStorageSettings>
+                <priority>Normal</priority>
+                <filter>
+                    <categories>
+                        <li>Root</li>
+                    </categories>
+                </filter>
+            </fixedStorageSettings>
+            <defaultStorageSettings>
+                <priority>Normal</priority>
+                <filter>
+                    <categories></categories>
+                </filter>
+            </defaultStorageSettings>
+            <relatedBuildCommands>
+                <li>DSU_DigitalStorageUnit_Building</li>
+                <li>DSU_AccessPoint_Building</li>
+                <li>DSU_InputBus_Building</li>
+                <li>DSU_OutputBus_Building</li>
+            </relatedBuildCommands>
+        </building>
+        <statBases>
+            <WorkToBuild>750</WorkToBuild>
+            <MaxHitPoints>100</MaxHitPoints>
+            <MarketValue>1729</MarketValue>
+            <Flammability>1.0</Flammability>
+            <Mass>30</Mass>
+        </statBases>
+        <inspectorTabs>
+            <li>ITab_Storage</li>
+            <li>DigitalStorageUnit.ITab_Items</li>
+        </inspectorTabs>
+        <modExtensions>
+            <li Class="DigitalStorageUnit.ModExtensionPortColor">
+                <inColor>(144, 222, 255, 255)</inColor>
+                <outColor>(215, 169, 72, 255)</outColor>
+                <apColor>(190, 140, 255, 255)</apColor>
+            </li>
+        </modExtensions>
+    </ThingDef>
+</Defs>

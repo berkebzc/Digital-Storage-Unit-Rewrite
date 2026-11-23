@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>Digital Storage Unit (1.7 Rewrite)</name>
+    <packageId>dsu.rewrite.digitalstorageunit</packageId>
+    <author>berkebzc</author>
+    <modVersion IgnoreIfNoMatchingField="True">2.0.0</modVersion>
+    <url></url>
+    <description>A ground-up, performance focused rewrite of Digital Storage Unit for RimWorld 1.7.
+
+Adds a special storage that holds a large number of item stacks, plus Input Buses, Output Buses, Access Points and Data Extenders "connected" to it. The DSU consumes power per stored stack. Without power, items can still be taken out, but nothing new can be stored.
+
+What changed compared to the original:
+- Content tracked with O(1) hash sets / per-def index instead of rescanning cell thing lists.
+- Hot Harmony patches (IsForbidden, Pawn_JobTracker.StartJob) are only applied while they are needed.
+- O(1) cell grid lookup for hiding items, no Thing.set_Position patch, no reachability patch.
+- Items tab only rebuilds when contents change and draws only visible rows.
+- Same defNames and class names as the original - existing saves keep their DSUs.
+
+Based on Project RimFactory Revived (MIT) and the original Digital Storage Unit by Johnson1893 (MIT). Big thanks to both teams!</description>
+
+    <supportedVersions>
+        <li>1.7</li>
+    </supportedVersions>
+
+    <modDependencies>
+        <li>
+            <packageId>brrainz.harmony</packageId>
+            <displayName>Harmony</displayName>
+            <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+            <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+        </li>
+    </modDependencies>
+
+    <loadAfter>
+        <li>brrainz.harmony</li>
+        <li>UnlimitedHugs.HugsLib</li>
+        <li>skyarkhangel.HSK</li>
+        <li>Mehni.PickUpAndHaul</li>
+        <li>LWM.DeepStorage</li>
+        <li>oskarpotocki.vanillafactionsexpanded.core</li>
+        <li>adaptive.storage.framework</li>
+        <li>spdskatr.projectrimfactory</li>
+    </loadAfter>
+
+    <incompatibleWith>
+        <li>Relvl.DigitalStorageUnit</li>
+    </incompatibleWith>
+
+    <modIconPath IgnoreIfNoMatchingField="True">Storage/CargoPlatform</modIconPath>
+</ModMetaData>

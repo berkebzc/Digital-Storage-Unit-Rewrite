@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+    <DSU>Digital Storage Unit</DSU>
+    <DSU.AdjustOutputDirection>Work cell</DSU.AdjustOutputDirection>
+    <DSU.AdjustOutputDirection.Desc>Choose the cell this bus works on: its own cell or one of the four adjacent cells (e.g. a hopper or a conveyor).</DSU.AdjustOutputDirection.Desc>
+    <DSU.DropDirection>Drop side</DSU.DropDirection>
+    <DSU.DropDirection.Desc>Side of the DSU where items dropped from the Items tab are placed.</DSU.DropDirection.Desc>
+    <DSU.Direction.Self>self</DSU.Direction.Self>
+    <DSU.Direction.North>north</DSU.Direction.North>
+    <DSU.Direction.East>east</DSU.Direction.East>
+    <DSU.Direction.South>south</DSU.Direction.South>
+    <DSU.Direction.West>west</DSU.Direction.West>
+    <DSU.MinMaxAmounts>Set min/max amounts</DSU.MinMaxAmounts>
+    <DSU.UseMin>Use Min?</DSU.UseMin>
+    <DSU.UseMax>Use Max?</DSU.UseMax>
+    <DSU.Max>Maximum</DSU.Max>
+    <DSU.Max.Desc>When this is enabled, the Output Bus will stop taking items if either the stack is full, or the stack size is greater than or equal to X.</DSU.Max.Desc>
+    <DSU.Min>Minimum</DSU.Min>
+    <DSU.Min.Desc>When this is enabled, the Output Bus will return the outputted item to the DSU if the item has less than X stack size. It will also only take items if there are enough items in storage to exceed the minimum.</DSU.Min.Desc>
+    <DSU.Limit.GetInspectString>Limits: {0} - {1}</DSU.Limit.GetInspectString>
+    <DSU.ForbidOnPlacing>Forbid output</DSU.ForbidOnPlacing>
+    <DSU.ForbidOnPlacing.Desc>Items pushed out by this bus are forbidden.</DSU.ForbidOnPlacing.Desc>
+    <DSU.Drop>Drop {0}</DSU.Drop>
+    <DSU.TotalStackNum>Total number of stacks: {0}</DSU.TotalStackNum>
+    <DSU.IItemsTab>Items</DSU.IItemsTab>
+    <DSU.IItemsTab.Label.Empty>There are currently no items stored</DSU.IItemsTab.Label.Empty>
+    <DSU.IItemsTab.Caption>{0}: {1}/{2} stacks</DSU.IItemsTab.Caption>
+    <DSU.IItemsTab.Caption.Filtered>{0}: {1}/{2} stacks (found: {3})</DSU.IItemsTab.Caption.Filtered>
+    <DSU.Rename>Rename</DSU.Rename>
+    <DSU.Rename.Desc>Rename this building</DSU.Rename.Desc>
+    <DSU.StacksCount.Detailed>{0}/{1} stacks</DSU.StacksCount.Detailed>
+    <DSU.Output.Settings>Output settings...</DSU.Output.Settings>
+    <DSU.BindPort.Desc>Choose the Digital Storage Unit this port is connected to. Applies to all selected ports.</DSU.BindPort.Desc>
+    <DSU.AccessPoint.Providing>Providing items: {0}</DSU.AccessPoint.Providing>
+    <DSU.PawnAccess>Pawn access</DSU.PawnAccess>
+    <DSU.PawnAccess.Desc>When disabled, pawns can neither take items out of this DSU nor haul items into it. Ports keep working.</DSU.PawnAccess.Desc>
+    <DSU.Heater.Inspect>Room temperature: {0} (damage at {1})</DSU.Heater.Inspect>
+    <DSU.Alert.LostLink.Label>DSU: port lost link</DSU.Alert.LostLink.Label>
+    <DSU.Alert.LostLink.Desc>A DSU port is not connected to any Digital Storage Unit. Select it and connect it to a DSU.</DSU.Alert.LostLink.Desc>
+    <DSU.Alert.DsuNonHermetic>DSU room lost a roof</DSU.Alert.DsuNonHermetic>
+    <DSU.Alert.DsuNonHermetic.Desc>The DSU should be placed in a fully roofed room, but there is no ceiling or wall in the room.</DSU.Alert.DsuNonHermetic.Desc>
+    <DSU.Alert.DsuOverheat>DSU room temperature is critical</DSU.Alert.DsuOverheat>
+    <DSU.Alert.DsuOverheat.Desc>If the temperature keeps rising, the DSU and its stored items will begin to receive damage. Disable the DSU or use coolers!</DSU.Alert.DsuOverheat.Desc>
+
+    <DSU.PlaceWorker.ProperRoomNeeded>The DSU should be placed in a fully roofed room</DSU.PlaceWorker.ProperRoomNeeded>
+    <DSU.PlaceWorker.DsuNeeded>Must be placed in a room with a Digital Storage Unit</DSU.PlaceWorker.DsuNeeded>
+    <DSU.PlaceWorker.OnlyOneDsuNeeded>Must be placed in a room with only one Digital Storage Unit</DSU.PlaceWorker.OnlyOneDsuNeeded>
+    <DSU.Message.AutoBoundTo>Auto bound to DSU: {0}</DSU.Message.AutoBoundTo>
+
+    <DSU.Config.BaseDsuStackSize>DSU base capacity: {0} stacks</DSU.Config.BaseDsuStackSize>
+    <DSU.Config.BaseDsuStackSize.Desc>Number of stacks a DSU can hold without data extenders.</DSU.Config.BaseDsuStackSize.Desc>
+    <DSU.Config.ExtenderStackIncrease>Data extender capacity: +{0} stacks</DSU.Config.ExtenderStackIncrease>
+    <DSU.Config.ExtenderStackIncrease.Desc>Extra stacks granted by every powered data extender in the DSU room.</DSU.Config.ExtenderStackIncrease.Desc>
+    <DSU.Config.DsuPathingMultiplier>Access point preference factor: {0}</DSU.Config.DsuPathingMultiplier>
+    <DSU.Config.DsuPathingMultiplier.Desc>Multiplies the distance pawn -> DSU -> destination. Higher values make pawns use Access Points more often.</DSU.Config.DsuPathingMultiplier.Desc>
+    <DSU.Config.EnergyPerStack>DSU energy consume per stored stack: {0} W</DSU.Config.EnergyPerStack>
+    <DSU.Config.EnergyPerStack.Desc>The changes will be applied within 60 ticks</DSU.Config.EnergyPerStack.Desc>
+    <DSU.Config.AccessPointReturnDelay>Access point return delay: {0} ticks</DSU.Config.AccessPointReturnDelay>
+    <DSU.Config.AccessPointReturnDelay.Desc>How long an item delivered to an Access Point waits (when not reserved) before it is sent back into the DSU.</DSU.Config.AccessPointReturnDelay.Desc>
+    <DSU.Config.HeaterEnabled>Hardmode: DSU heating mechanics enabled</DSU.Config.HeaterEnabled>
+    <DSU.Config.HeaterEnabled.Desc>Enables DSU heating mechanics. It begins to emit a lot of heat when working, which you have to take away. If the DSU overheats - itself and the stored items will be damaged. Stock up on air conditioners or freezers!</DSU.Config.HeaterEnabled.Desc>
+    <DSU.Config.AutoBoundDsu>Auto bound ports to single DSU</DSU.Config.AutoBoundDsu>
+    <DSU.Config.AutoBoundDsu.Desc>If there is only one DSU on the map - all new ports will be automatically bound to it.</DSU.Config.AutoBoundDsu.Desc>
+    <DSU.Config.CleanCellItemList>Clean cell item list over DSU</DSU.Config.CleanCellItemList>
+    <DSU.Config.CleanCellItemList.Desc>Hides the bottom-left mouseover readout while the cursor is over a filled DSU. Listing hundreds of stacks there every frame costs a lot of FPS.</DSU.Config.CleanCellItemList.Desc>
+</LanguageData>
