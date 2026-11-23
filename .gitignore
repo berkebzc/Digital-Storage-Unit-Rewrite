@@ -1,8 +1,8 @@
-﻿# Build ciktilari
+﻿# Build output
 Source/**/obj/
 Source/**/bin/
 *.user
 .vs/
 
-# RimWorld asset pack (Steam yuklemesinde otomatik olusur)
+# RimWorld asset pack (generated automatically on Steam upload)
 */Assets.zip*
